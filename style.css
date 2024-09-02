@@ -1,0 +1,117 @@
+*{
+    font-family:sans-serif;
+}
+body{
+    background: rgb(246, 242, 242);
+}
+section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 800px;
+    min-height: 100px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 3.5vh;
+}
+.carousel-inner::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-style: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #f35252;
+    font-style: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color:#000;
+
+}
+
+.navbar-light.navbar-nav .navbar-link{
+    color: #000;
+}
+
+.w-100{
+    height: 140vh;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+
+.team .card-body i{
+    font-size: 20px;
+    
+}
+.portfolio .card{
+    box-shadow: 30px 30px 40px rgba(0,0,0,0);
+}
+.team.card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0);
+}
+
+@media only screen and(min-width:768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 126px;
+    }
+    .carousel-caption h5{
+        font-style: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-style: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
